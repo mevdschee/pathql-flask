@@ -1,3 +1,3 @@
 # pathql-flask
 
-GraphQL implementation in Python using Flask-JSON.
+PathQL implementation in Python using Flask-JSON (see: [PathQL.org](https://pathql.org/)).
