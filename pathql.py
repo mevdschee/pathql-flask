@@ -21,10 +21,10 @@ app.config['JSON_ADD_STATUS'] = False
 db = None
 cwd = getcwd()
 
-@app.route('/query', methods=['POST'])
-@swag_from(cwd+'/query.yml')
+@app.route('/pathql', methods=['POST'])
+@swag_from(cwd+'/pathql.yml')
 @as_json
-def query():
+def pathql():
     data = request.get_json(force=True)
     try:    
         result = db.path_query(data['query'],data['params'])
