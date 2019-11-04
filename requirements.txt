@@ -1,0 +1,4 @@
+flask_json
+flasgger
+psycopg2
+sqlalchemy

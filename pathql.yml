@@ -15,10 +15,10 @@ parameters:
       properties:
         query:
           type: string
-          example: 'select :var as "$.var"'
+          example: 'select posts.id as "$.posts[].id", posts.content, comments.id as "$.posts[].comments[].id", comments.message from posts, comments where post_id = posts.id and posts.id = :id'
         params:
           type: object
-          example: {"var":42}
+          example: {"id":1}
 responses:
   200:
     description: OK
